@@ -15,6 +15,7 @@ class Timer{
  }
 
     start = () => {
+        clearInterval(this.interval);
         if (this.onStart){
           this.onStart(this.timeRemaining);  
         }

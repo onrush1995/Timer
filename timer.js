@@ -11,7 +11,7 @@ class Timer{
 // start and pause button deceleration
 
         this.startButton.addEventListener("click",this.start);
-        this.pauseButton.addEventListener("click", this.pause);
+        this.pauseButton.addEventListener("click",this.pause);
  }
 
     start = () => {
@@ -42,6 +42,7 @@ class Timer{
     };
 
     get timeRemaining(){
+
         return parseFloat(this.durationInput.value);
     }
 
